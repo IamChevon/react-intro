@@ -37,6 +37,10 @@ node_modules/
 myfirstapp/node_modules/
 jspm_packages/
 
+myfirstapp/*.gitignore
+
+myfirstapp/*.md
+
 # TypeScript v1 declaration files
 typings/
 

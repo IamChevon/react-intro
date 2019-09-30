@@ -4,7 +4,7 @@ import "./Item.css";
 function Item() {
   return (
     <div>
-        <span>Item one</span>
+        <input type="checkbox"/><span>Item one</span>
     </div>
   );
 }

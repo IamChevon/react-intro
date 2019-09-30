@@ -1,6 +1,16 @@
 #container {
     margin-top: 1rem;
 }
+#new-item {
+    height: 1.5rem;
+}
+
+
+#add-item {
+    background-color: dodgerblue;
+    height: 2rem;
+    padding: .5rem;
+}
 
 button {
     margin-left: 1em;

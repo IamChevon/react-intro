@@ -4,8 +4,8 @@ import "./Input.css";
 function Input() {
     return (
         <div id="container">
-            <input type="text" name="new-item"/>
-            <button>Add item</button>
+            <input type="text" id="new-item" name="new-item"/>
+            <button id="add-item">Add item</button>
         </div>
         
     );

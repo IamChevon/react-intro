@@ -36,6 +36,7 @@ build/Release
 node_modules/
 myfirstapp/node_modules/
 react-scrimba/node_modules/
+todo-app/node_modules/
 jspm_packages/
 
 myfirstapp/*.gitignore

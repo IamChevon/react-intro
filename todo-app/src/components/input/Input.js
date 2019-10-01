@@ -5,7 +5,7 @@ function Input() {
     return (
         <div id="container">
             <input type="text" id="new-item" name="new-item"/>
-            <button id="add-item">Add item</button>
+            <button id="add-button">Add item</button>
         </div>
         
     );

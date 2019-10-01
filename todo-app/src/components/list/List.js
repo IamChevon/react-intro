@@ -1,13 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import Item from "../item/Item";
 import "./List.css";
+
+let ListArray = [];
 
 function List() {
   return (
     <div>
-      <Item />
-      <Item />
-      <Item />
     </div>
   );
 }

@@ -4,12 +4,25 @@
 
 #new-item {
     height: 1.5rem;
+    border: none;
+    padding: .3rem .6rem;
+    border-radius: 6px;
+    background-color:  rgba(140, 144, 127, .2);
 }
 
-#add-item {
+#add-button {
+    background-color: transparent;
+    padding: .6rem .6rem;
+    border-radius: 6px;
+    border: dodgerblue solid 2px;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#add-button:hover {
     background-color: dodgerblue;
-    height: 2rem;
-    padding: .5rem;
+    color: white;
 }
 
 button {

@@ -1,0 +1,7 @@
+li {
+    padding-left: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+}

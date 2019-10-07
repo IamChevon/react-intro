@@ -1,14 +1,20 @@
-import React, {useState} from "react";
+import React from "react";
 import Item from "../item/Item";
 import "./List.css";
 
-let ListArray = [];
+const List = props => {
 
-function List() {
+  const theList = createList(props.list);
+
   return (
     <div>
+      {theList}
     </div>
   );
+}
+
+const createList = list => {
+  return list.map(item => <Item name={item} key={item}/>)
 }
 
 export default List;

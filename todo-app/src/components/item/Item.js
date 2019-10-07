@@ -1,11 +1,11 @@
 import React from "react";
 import "./Item.css";
 
-function Item(props) {
+const Item = props => {
 
   return (
     <div>
-        <input type="checkbox"/><span></span>
+        <input type="checkbox"/><span>{props.name}</span>
     </div>
   );
 }

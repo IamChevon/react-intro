@@ -4,3 +4,12 @@ span {
     color: blueviolet;
 }
 
+.delete {
+    margin-left: 2rem;
+    color: tomato;
+    cursor: pointer;
+}
+
+/* .delete:hover {
+
+} */

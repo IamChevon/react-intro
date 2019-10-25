@@ -4,8 +4,8 @@ import "./Item.css";
 const Item = props => {
 
   return (
-    <div>
-        <input type="checkbox"/><span>{props.name}</span>
+    <div id="listItem">
+        <input type="checkbox"/><span>{props.name}</span> <span className="delete">X</span>
     </div>
   );
 }

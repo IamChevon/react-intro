@@ -4,18 +4,20 @@ import "./Input.css";
 const Input = (props) => {
   
 
-  const handleUpdate = event => {
-    let input;
+  const handleInput = event => {
+    let inputElement;
     if (event.type === "click") {
-      input = document.getElementById("new-item").value;
+      inputElement = document.getElementById("new-item");
     }
-    props.newItem(input);
+    props.newItem(inputElement.value);
+
+    inputElement.value = "";
   };
 
   return (
     <div id="container">
       <input type="text" id="new-item" name="new-item" />
-      <button id="add-button" onClick={handleUpdate}>
+      <button id="add-button" onClick={handleInput}>
         Add Item
       </button>
     </div>

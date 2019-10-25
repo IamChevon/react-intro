@@ -4,11 +4,11 @@ import "./List.css";
 
 const List = props => {
 
-  const theList = createList(props.list);
+  const todoList = createList(props.list);
 
   return (
     <div>
-      {theList}
+      {todoList}
     </div>
   );
 }

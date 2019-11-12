@@ -4,6 +4,15 @@ import "./List.css";
 
 const List = props => {
 
+
+  const deleteItem = (index) => {
+    props.deleteItem(index);
+  }
+
+  const createList = list => {
+    return list.map(item => <Item name={item} key={item} deleteItem={deleteItem} />)
+  }
+
   const todoList = createList(props.list);
 
   return (
@@ -13,8 +22,6 @@ const List = props => {
   );
 }
 
-const createList = list => {
-  return list.map(item => <Item name={item} key={item}/>)
-}
+
 
 export default List;

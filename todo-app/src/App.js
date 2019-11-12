@@ -10,17 +10,25 @@ function App() {
   const [ListItem, setListItem] = useState([]);
 
   const newItem = (item) => {
-    //  theList.push(item);
-    setListItem([...ListItem, item]);
+     ListItem.push(item);
+    setListItem([...ListItem]);
 
-    console.log("added new item");
+    console.log("added new item: " + ListItem);
+  };
+
+  const deleteItem = (item) => {
+    console.log("removed: " + item)
+    let index = ListItem.indexOf(item);
+    ListItem.splice(index, 1);
+    setListItem([...ListItem]);
+
   };
 
 
   return (
     <div>
       <Header />
-      <List list={ListItem} />
+      <List list={ListItem} deleteItem={deleteItem}/>
       <Input newItem={newItem} />
     </div>
   );

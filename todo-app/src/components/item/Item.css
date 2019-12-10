@@ -1,13 +1,28 @@
-span {
+.listItem {
+    padding: .7rem 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* span {
     padding-bottom: 1em;
     margin-bottom: 1em;
+} */
+
+.item {
+    margin-right: auto;
     color: blueviolet;
 }
 
 .delete {
-    margin-left: 2rem;
     color: tomato;
     cursor: pointer;
+    padding: .1em .3em;
+    border: 1px solid red;
+    border-radius: 4px;
 }
 
 /* .delete:hover {

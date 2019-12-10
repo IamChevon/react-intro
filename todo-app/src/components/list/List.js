@@ -16,7 +16,7 @@ const List = props => {
   const todoList = createList(props.list);
 
   return (
-    <div>
+    <div id="list">
       {todoList}
     </div>
   );

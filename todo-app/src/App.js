@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/header/Header";
 import List from "./components/list/List";
 import Input from "./components/input/Input";
+import "./App.css";
 
 
 
@@ -13,10 +14,14 @@ function App() {
   // new item function captures values passed from
   //  input component. add new item to list
   const newItem = (item) => {
-     ListItem.push(item);
-    setListItem([...ListItem]);
+    if (!ListItem.includes(item)) {
+      ListItem.push(item);
+      setListItem([...ListItem]);
 
-    console.log("added new item: " + ListItem);
+      console.log("added new item: " + ListItem);
+    } else {
+      alert("Item Already Exists!");
+    }
   };
 
   // removes a selected item from list ad updates list
@@ -32,9 +37,12 @@ function App() {
   return (
     <div>
       <Header />
-      <List list={ListItem} deleteItem={deleteItem}/>
+    <div className="app">
+      <List list={ListItem} deleteItem={deleteItem} />
       <Input newItem={newItem} />
     </div>
+    </div>
+    
   );
 
 }

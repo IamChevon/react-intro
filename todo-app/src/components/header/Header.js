@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.css";
-
-function Header() {
+const Header = props => {
+    const title = props.title;
     return (
-        <h1>Todo App</h1>
+        <h1>{title}</h1>
     );
 }
 

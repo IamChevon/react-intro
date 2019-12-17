@@ -14,9 +14,11 @@ const Item = props => {
 
   return (
     <div id={props.name} className="listItem">
-      <div><input type="checkbox" /><span className="item">{props.name}</span></div>
+      <input type="checkbox" />
+      <div>
+        <p className="item">{props.name}</p>
+      </div>
       <span className="delete" onClick={deleteItem}>X</span>
-
     </div>
   );
 }

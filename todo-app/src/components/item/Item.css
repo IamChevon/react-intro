@@ -6,17 +6,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
-/* span {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-} */
+.listItem div {
+    margin-right: auto;
+    margin-left: 0;
+}
 
 .item {
     margin-right: auto;
     color: blueviolet;
     height: auto;
     flex-wrap: wrap;
+    word-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: start;
+}
+
+input[type="checkbox"] {
+    align-self: flex-start
 }
 
 .delete {

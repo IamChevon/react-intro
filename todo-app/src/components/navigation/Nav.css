@@ -1,8 +1,5 @@
 .nav {
-    width: 480px;
-    padding: 2rem;
-    border: 1px solid lightgrey;
-    border-radius: 16px 16px 0 0;
+    padding: 1rem 2rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -11,6 +8,10 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
 }
 
 .nav li {

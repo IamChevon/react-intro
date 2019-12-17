@@ -17,7 +17,7 @@ function Tasks() {
       ListItem.push(item);
       setListItem([...ListItem]);
 
-      console.log("added new item: " + ListItem);
+      console.log("added new item: " + item);
     } else {
       alert("Item Already Exists!");
     }

@@ -1,8 +1,8 @@
 #list {
+    max-height: 240px;
     min-height: 120px;
     padding: .8rem;
-    margin-bottom: 4rem;
     border: 1px solid lightgrey;
     border-radius: 8px;
-    overflow-y: visible;
+    overflow-y: scroll;
 }

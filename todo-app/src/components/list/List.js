@@ -4,8 +4,7 @@ import "./List.css";
 
 const List = props => {
 
-
-  const deleteItem = (index) => {
+  const deleteItem = index => {
     props.deleteItem(index);
   }
 
